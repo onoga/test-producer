@@ -10,7 +10,6 @@
                  [net.tbt-post/clj-kafka-x "0.3.1"]
                  [net.tbt-post/zlib-tiny "0.2.3"]
                  [cheshire "5.8.1"]
-                 [net.tbt-post/zlib-tiny "0.2.3"]
 
                  ;; HTTP
                  [io.pedestal/pedestal.service "0.5.7"]
@@ -29,9 +28,4 @@
 
   :profiles {:uberjar {:aot :all}}
 
-  :plugins [[lein-ancient "0.6.15"]]
-
-  :repositories [["private-jars" "http://local.repo:9180/repo"]])
-
-(cemerick.pomegranate.aether/register-wagon-factory!
-  "http" #(org.apache.maven.wagon.providers.http.HttpWagon.))
+  :plugins [[lein-ancient "0.6.15"]])
